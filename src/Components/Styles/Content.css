@@ -1,0 +1,568 @@
+.content-container {
+
+   text-align: center;
+   padding: 0 5%;
+   margin: 50px 0;
+}
+
+.content-container h1 {
+
+   margin: 30px;
+   font-size: 2.5rem;
+   color: #37323E;
+ 
+
+}
+
+.cards {
+   margin-top: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   flex-wrap: wrap;
+
+
+}
+
+
+.card {
+
+   flex-basis: 25%;
+   padding: 30px;
+   cursor: pointer;
+   background-color: #37323E;
+   border-radius: 20px;
+   color: white;
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+   transition: transform 0.3s, box-shadow 0.5s;
+}
+
+.card img {
+
+   width: 250px;
+   height: 250px;
+   border-radius: 20px;
+}
+
+.card h2 {
+
+   color: #DEB841;
+   margin: 10px 0;
+   font-size: 1.6rem;
+}
+
+.card p {
+   font-size: 16px;
+   font-weight: 200;
+
+}
+
+.card:hover {
+
+   transform: scale(1.1);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+.cards:hover .card {
+
+   opacity: 0.8;
+   filter: grayscale(1);
+}
+
+.cards:hover .card:hover {
+
+   opacity: 1;
+   filter: grayscale(0);
+}
+
+.about-container {
+
+   overflow: hidden;
+   margin-top: 100px;
+   padding: 0 10%;
+}
+
+.Container-1 {
+
+   opacity: 0;
+   margin: 100px 0;
+   display: flex;
+   justify-content: space-between;
+   transform: translateX(300px);
+   transition: all ease-in-out 0.8s;
+
+}
+
+.Container-1.reverse {
+
+   transform: translateX(-300px);
+}
+
+.Container-1.show {
+
+   opacity: 1;
+   transform: translateX(0);
+}
+
+
+.text1-container {
+
+
+   flex: 1;
+   padding: 20px;
+   display: flex;
+   align-items: start;
+   gap: 20px;
+   flex-direction: column;
+}
+
+.text1-container h2 {
+
+   color: #37323E;
+   text-align: left;
+   font-size: 2.3rem;
+   margin-bottom: 10px;
+}
+
+.text1-container p {
+
+   color: #414142;
+   text-align: left;
+   line-height: 2rem;
+   font-size: 22px;
+}
+
+
+.image {
+
+   flex: 1;
+
+}
+
+
+.image img {
+
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+   padding: 10px;
+   border-radius: 40px;
+   width: 450px;
+   height: 400px;
+}
+
+.subscription {
+
+   text-align: center;
+   padding: 0 10%;
+   margin: 50px 0;
+}
+
+.subscription h1 {
+
+   font-size: 2.5rem;
+   margin-bottom: 40px;
+   color: #37323E;
+}
+
+.plans {
+
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   gap: 30px;
+
+}
+
+.plan-card {
+
+   cursor: pointer;
+   background-color: #37323E;
+   padding: 20px;
+   border-radius: 20px;
+   transition: ease 0.5s;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.plan-card h2 {
+
+   font-size: 2rem;
+   color: #de9e36;
+   margin: 30px 0;
+}
+
+.plan-card p {
+
+   margin-bottom: 30px;
+   font-size: 1.5rem;
+   color: whitesmoke;
+}
+
+.plan-card ul li {
+
+   list-style: none;
+   font-size: 1.1rem;
+   margin-bottom: 20px;
+   color: whitesmoke;
+}
+
+.tick {
+
+   margin-right: 10px;
+   font-size: 1.3rem;
+   color: #de9e36;
+}
+
+.plan-card button {
+
+   margin: 20px;
+   padding: 10px 15px;
+   border-radius: 20px;
+   border: none;
+   font-size: 1rem;
+   color: #de9e36;
+   background-color: rgb(18, 16, 16);
+   cursor: pointer;
+}
+
+.plan-card:hover {
+
+   transform: scale(1.05);
+   translate: 0 -15px;
+}
+
+.about1-container {
+
+   text-align: center;
+   padding: 0 10%;
+   margin: 50px 0;
+}
+
+.about1-container h1 {
+
+   font-size: 2.5rem;
+   color: #37323E;
+}
+
+.flex-col {
+
+   margin-top: 80px;
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.left-side {
+
+   flex-basis: 40%;
+   text-align: left;
+
+}
+
+.left-side h2 {
+
+   color: #37323E;
+   font-size: 1.8rem;
+   margin-bottom: 20px;
+}
+
+.left-side p {
+
+   font-size: 1.3rem;
+   margin-bottom: 20px;
+}
+
+.contact-info li {
+
+   display: flex;
+   align-items: center;
+   list-style: none;
+   font-size: 1.1rem;
+   color: #414142;
+   margin-bottom: 10px;
+}
+
+.contact-info li a {
+
+   text-decoration: none;
+   color: #414142;
+}
+
+.icon-1 {
+
+   font-size: 1.3rem;
+   margin-right: 10px;
+   color: #37323E;
+}
+
+.right-side {
+
+   flex-basis: 50%;
+}
+
+form {
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 20px;
+}
+
+form input {
+
+   min-width: 80%;
+   padding: 15px 15px;
+   margin-bottom: 5px;
+   background-color: #37323E;
+   border: none;
+   color: whitesmoke;
+   outline: none;
+   border-radius: 30px;
+   font-size: 1rem;
+}
+
+form textarea {
+
+   min-width: 80%;
+   padding: 15px 15px;
+   margin-bottom: 5px;
+   background-color: #37323E;
+   border: none;
+   color: whitesmoke;
+   outline: none;
+   border-radius: 30px;
+   font-size: 1rem;
+
+}
+
+form button {
+
+   padding: 10px 15px;
+   border: none;
+   border: solid 2px black;
+   color: #37323E;
+   background: none;
+   font-size: 1rem;
+   border-radius: 20px;
+   margin-left: 10px;
+   cursor: pointer;
+   transition: color 0.5s;
+}
+
+form button:hover {
+
+   background: linear-gradient(90deg, #de9e36, #DEB841);
+   color: black;
+   border: solid 2px #de9e36;
+}
+
+
+@media (max-width:1025px){
+
+       .cards{
+
+         flex-direction: column;
+         
+       }
+
+       .card img{
+
+         width: 300px;
+         height: 250px;
+       }
+
+       .card{
+
+         width: 500px;
+       }
+
+       .Container-1{
+
+         flex-direction: column-reverse;
+         margin-bottom: 20px;
+       }
+
+       .text1-container{
+         
+         margin-top: 20px;
+         padding: 50px;
+       }
+
+       .reverse{
+
+         flex-direction: column;
+       }
+
+       .plans{
+
+           grid-template-columns: 500px;
+           align-items: center;
+           justify-content: center;
+
+       }
+
+       .plan-card h2{
+
+         font-size: 1.5rem;
+       }
+
+       .plan-card p{
+
+         font-size: 1.2rem;
+       }
+
+       .plan-card ul li{
+
+         font-size: 10px;
+
+       }
+
+       .plan-card button{
+
+         transform: scale(1.5);
+       }
+
+       .flex-col{
+
+         flex-direction: column;
+         gap: 30px;
+       }
+
+
+       .left-side p{
+
+         font-size: 14px;
+       }
+
+       .left-side li{
+
+         font-size: 1.5rem;
+       }
+
+
+
+       
+
+}
+
+@media (max-width:600px) {
+
+.cards{
+
+   flex-direction: row;
+}
+
+   .content-container h1,.about1-container h1,.subscription h1 {
+
+      font-size: 2.2rem;
+   }
+
+   .card img {
+
+      width: 250px;
+      height: 200px;
+   }
+
+
+   .flex-col {
+
+      flex-direction: column;
+      gap: 30px;
+   }
+
+   form input,
+   form textarea {
+
+      width: 100%;
+   }
+
+   .Container-1 {
+
+      flex-direction: column-reverse;
+      gap: 20px;
+   }
+
+   .image img {
+
+      width: 320px;
+      height: 250px;
+   }
+
+   .about-container {
+
+      padding: 0 0;
+   }
+
+   .Container-1 {
+
+      margin-top: 40px;
+      margin-bottom: 50px;
+   }
+
+   .Container-1.reverse {
+
+      flex-direction: column;
+   }
+
+   .text1-container{
+
+      margin: 0;
+      padding: 20px;
+   }
+
+   .text1-container h2 {
+
+      font-size: 1.8rem;
+   }
+
+   .text1-container p {
+
+      font-size: 1.3rem;
+   }
+
+   .plans{
+
+      grid-template-columns: 1fr;
+   }
+
+   .plan-card h2{
+
+      font-size: 2rem;
+    }
+
+    .plan-card p{
+
+      font-size: 1.5rem;
+    }
+
+    .plan-card ul li{
+
+      font-size: 1.1rem;
+
+    }
+
+    .plan-card button{
+
+      transform: scale(1);
+    }
+
+    .left-side p{
+
+      font-size: 1.3rem;
+    }
+
+    .left-side li{
+
+      font-size: 1.1rem;
+    }
+
+  
+
+
+
+
+
+
+
+
+}

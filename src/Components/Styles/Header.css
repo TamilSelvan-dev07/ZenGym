@@ -1,0 +1,118 @@
+.header-container{
+    
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0, 4, 8, 0.7),rgba(37, 37, 37, 0.7)), url("../../assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-container{
+   margin-top: 50px;
+   text-align: center;
+   max-width: 900px;
+
+}
+
+
+.text-container h1{
+
+    
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: transparent;
+    position: relative;
+    background: linear-gradient(90deg,#FAA613,#ff8400,#ffff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: reveal 3s ease-in forwards ;
+    clip-path: inset(0 100% 0 0 );
+    
+}
+
+@keyframes reveal {
+
+    0%{
+        clip-path: inset(0 100%  0 0);
+    }
+
+    100%{
+
+        clip-path: inset(0 0 0 0);
+    }
+    
+}
+
+.header-container p{
+
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+
+.header-container button{
+
+    border: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background: none;
+    color: white;
+    border: solid 2px #FAA613;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.header-container button:hover{
+
+    background: linear-gradient(to right,#F3C623,#EB8317);
+    color: black;
+    
+}
+
+@media (max-width:1025px){
+
+
+    .text-container h1{
+
+              font-size: 3rem;
+    }
+
+    .text-container p{
+
+        font-size: 2.5rem;
+    }
+
+    .text-container button{
+
+        transform: scale(1.5);
+    }
+
+   
+}
+
+@media (max-width:600px){
+
+    .text-container h1{
+
+        font-size: 2.3rem;
+    }
+
+    .text-container p{
+
+        font-size: 1.6rem;
+    }
+
+    .text-container button{
+
+        transform: scale(1);
+    }
+}
